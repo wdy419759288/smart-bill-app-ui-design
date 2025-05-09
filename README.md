@@ -8,8 +8,8 @@
 
 您可以通过以下链接直接体验智慧账本APP的UI设计：
 
-- [UI设计展示页面](https://wdy419759288.github.io/smart-bill-app-ui-design/交互原型/showcase.html) - 查看所有界面设计
-- [交互原型](https://wdy419759288.github.io/smart-bill-app-ui-design/交互原型/interactive-prototype.html) - 体验完整交互流程
+- [UI设计展示页面](https://github.com/wdy419759288/smart-bill-app-ui-design/交互原型/showcase.html) - 查看所有界面设计
+- [交互原型](https://github.com/wdy419759288/smart-bill-app-ui-design/交互原型/interactive-prototype.html) - 体验完整交互流程
 
 ## 设计亮点
 
