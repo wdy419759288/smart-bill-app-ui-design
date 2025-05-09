@@ -1,0 +1,77 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <rect width="390" height="844" fill="url(#paint0_linear)" />
+  
+  <!-- 顶部返回按钮 -->
+  <circle cx="36" cy="56" r="20" fill="white" fill-opacity="0.2" />
+  <path d="M42 56 L30 56 M30 56 L36 50 M30 56 L36 62" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- 标题 -->
+  <text x="195" y="120" font-family="sans-serif" font-size="24" font-weight="600" fill="white" text-anchor="middle">欢迎回来</text>
+  <text x="195" y="150" font-family="sans-serif" font-size="16" font-weight="400" fill="white" text-anchor="middle" opacity="0.8">登录您的智慧账本账户</text>
+  
+  <!-- 主内容卡片 -->
+  <g filter="url(#filter0_d)">
+    <rect x="24" y="200" width="342" height="420" rx="16" fill="white" />
+    
+    <!-- 手机号输入框 -->
+    <rect x="48" y="240" width="294" height="56" rx="12" fill="#F5F7FA" />
+    <text x="72" y="275" font-family="sans-serif" font-size="16" font-weight="400" fill="#666666">手机号</text>
+    <path d="M318 268 L326 268 M326 268 L322 264 M326 268 L322 272" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- 密码输入框 -->
+    <rect x="48" y="320" width="294" height="56" rx="12" fill="#F5F7FA" />
+    <text x="72" y="355" font-family="sans-serif" font-size="16" font-weight="400" fill="#666666">密码</text>
+    <rect x="318" y="338" width="20" height="20" rx="4" fill="#F5F7FA" />
+    <path d="M322 348 L334 348 M328 342 L328 354" stroke="#999999" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- 记住密码 -->
+    <rect x="48" y="400" width="20" height="20" rx="4" stroke="#4A6CF7" stroke-width="2" />
+    <text x="78" y="415" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333">记住密码</text>
+    
+    <!-- 忘记密码 -->
+    <text x="318" y="415" font-family="sans-serif" font-size="14" font-weight="400" fill="#4A6CF7" text-anchor="end">忘记密码?</text>
+    
+    <!-- 登录按钮 -->
+    <rect x="48" y="460" width="294" height="56" rx="28" fill="#4A6CF7" />
+    <text x="195" y="496" font-family="sans-serif" font-size="18" font-weight="600" fill="white" text-anchor="middle">登录</text>
+    
+    <!-- 注册提示 -->
+    <text x="150" y="550" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">还没有账号?</text>
+    <text x="240" y="550" font-family="sans-serif" font-size="14" font-weight="600" fill="#4A6CF7">立即注册</text>
+  </g>
+  
+  <!-- 其他登录方式 -->
+  <text x="195" y="660" font-family="sans-serif" font-size="14" font-weight="400" fill="white" text-anchor="middle">其他登录方式</text>
+  
+  <!-- 社交登录图标 -->
+  <circle cx="155" cy="700" r="24" fill="white" fill-opacity="0.2" />
+  <path d="M147 700 L163 700 M155 692 L155 708" stroke="white" stroke-width="2" stroke-linecap="round" />
+  
+  <circle cx="195" cy="700" r="24" fill="white" fill-opacity="0.2" />
+  <path d="M187 700 C187 700, 195 692, 203 700 C203 700, 195 708, 187 700" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <circle cx="235" cy="700" r="24" fill="white" fill-opacity="0.2" />
+  <rect x="227" y="692" width="16" height="16" rx="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- 底部装饰 -->
+  <path d="M0 780 C100 750, 300 810, 390 780" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+  <path d="M0 800 C150 770, 250 830, 390 800" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+  
+  <!-- 滤镜定义 -->
+  <defs>
+    <filter id="filter0_d" x="20" y="198" width="350" height="428" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="390" y2="844" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A6CF7" />
+      <stop offset="1" stop-color="#6E8CFF" />
+    </linearGradient>
+  </defs>
+</svg>

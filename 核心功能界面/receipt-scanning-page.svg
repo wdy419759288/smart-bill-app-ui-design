@@ -1,0 +1,97 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="390" height="844" fill="#F5F7FA" />
+  
+  <!-- 顶部状态栏 -->
+  <rect width="390" height="44" fill="white" />
+  <text x="24" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" dominant-baseline="middle">9:41</text>
+  <text x="366" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="end" dominant-baseline="middle">100%</text>
+  
+  <!-- 顶部导航栏 -->
+  <rect y="44" width="390" height="56" fill="white" />
+  <circle cx="36" cy="72" r="20" fill="#F5F7FA" />
+  <path d="M42 72 L30 72 M30 72 L36 66 M30 72 L36 78" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="195" y="72" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333" text-anchor="middle" dominant-baseline="middle">票据扫描</text>
+  
+  <!-- 相机取景框 -->
+  <rect x="24" y="120" width="342" height="400" rx="16" fill="#1A1D2D" />
+  
+  <!-- 票据轮廓指引 -->
+  <rect x="48" y="150" width="294" height="340" rx="8" stroke="#4A6CF7" stroke-width="2" stroke-dasharray="8 4" fill="none" />
+  <text x="195" y="320" font-family="sans-serif" font-size="16" font-weight="500" fill="white" text-anchor="middle">将票据放入框内</text>
+  
+  <!-- 扫描动画线 -->
+  <line x1="48" y1="250" x2="342" y2="250" stroke="#4A6CF7" stroke-width="2" />
+  
+  <!-- 操作提示 -->
+  <text x="195" y="550" font-family="sans-serif" font-size="16" font-weight="500" fill="#333333" text-anchor="middle">自动识别票据信息</text>
+  <text x="195" y="575" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666" text-anchor="middle">保持票据平整，光线充足</text>
+  
+  <!-- 识别结果预览 -->
+  <g filter="url(#filter0_d)">
+    <rect x="24" y="600" width="342" height="160" rx="16" fill="white" />
+    <text x="48" y="628" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">识别结果</text>
+    
+    <!-- 商家信息 -->
+    <text x="48" y="660" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">商家</text>
+    <text x="120" y="660" font-family="sans-serif" font-size="14" font-weight="500" fill="#333333">星巴克咖啡</text>
+    
+    <!-- 金额信息 -->
+    <text x="48" y="690" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">金额</text>
+    <text x="120" y="690" font-family="sans-serif" font-size="14" font-weight="500" fill="#333333">¥38.00</text>
+    
+    <!-- 日期信息 -->
+    <text x="48" y="720" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">日期</text>
+    <text x="120" y="720" font-family="sans-serif" font-size="14" font-weight="500" fill="#333333">2025-03-15 14:30</text>
+    
+    <!-- 分类信息 -->
+    <text x="240" y="660" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">分类</text>
+    <text x="312" y="660" font-family="sans-serif" font-size="14" font-weight="500" fill="#333333">餐饮</text>
+    
+    <!-- 支付方式 -->
+    <text x="240" y="690" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">支付</text>
+    <text x="312" y="690" font-family="sans-serif" font-size="14" font-weight="500" fill="#333333">微信</text>
+  </g>
+  
+  <!-- 底部操作按钮 -->
+  <g filter="url(#filter1_d)">
+    <rect x="24" y="780" width="166" height="48" rx="24" fill="white" />
+    <text x="95" y="810" font-family="sans-serif" font-size="16" font-weight="500" fill="#666666" text-anchor="middle">重新扫描</text>
+  </g>
+  
+  <g filter="url(#filter2_d)">
+    <rect x="200" y="780" width="166" height="48" rx="24" fill="#4A6CF7" />
+    <text x="271" y="810" font-family="sans-serif" font-size="16" font-weight="500" fill="white" text-anchor="middle">保存记录</text>
+  </g>
+  
+  <!-- 滤镜定义 -->
+  <defs>
+    <filter id="filter0_d" x="20" y="598" width="350" height="168" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter1_d" x="20" y="778" width="174" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter2_d" x="196" y="778" width="174" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+</svg>

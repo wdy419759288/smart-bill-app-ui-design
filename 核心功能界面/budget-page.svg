@@ -1,0 +1,192 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="390" height="844" fill="#F5F7FA" />
+  
+  <!-- 顶部状态栏 -->
+  <rect width="390" height="44" fill="white" />
+  <text x="24" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" dominant-baseline="middle">9:41</text>
+  <text x="366" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="end" dominant-baseline="middle">100%</text>
+  
+  <!-- 顶部导航栏 -->
+  <rect y="44" width="390" height="56" fill="white" />
+  <text x="24" y="72" font-family="sans-serif" font-size="20" font-weight="700" fill="#333333" dominant-baseline="middle">预算管理</text>
+  <circle cx="354" cy="72" r="18" fill="#F5F7FA" />
+  <path d="M348 72 L360 72 M354 66 L354 78" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- 月度预算概览卡片 -->
+  <g filter="url(#filter0_d)">
+    <rect x="24" y="120" width="342" height="120" rx="16" fill="url(#paint0_linear)" />
+    <text x="48" y="148" font-family="sans-serif" font-size="16" font-weight="600" fill="white">本月预算</text>
+    <text x="318" y="148" font-family="sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="end">2025年5月</text>
+    
+    <!-- 预算进度条 -->
+    <rect x="48" y="168" width="294" height="12" rx="6" fill="white" fill-opacity="0.3" />
+    <rect x="48" y="168" width="176" height="12" rx="6" fill="white" />
+    
+    <!-- 预算金额 -->
+    <text x="48" y="200" font-family="sans-serif" font-size="14" font-weight="400" fill="white">已用: ¥6,000</text>
+    <text x="195" y="200" font-family="sans-serif" font-size="14" font-weight="400" fill="white" text-anchor="middle">剩余: ¥4,000</text>
+    <text x="342" y="200" font-family="sans-serif" font-size="14" font-weight="400" fill="white" text-anchor="end">总额: ¥10,000</text>
+  </g>
+  
+  <!-- 分类预算标题 -->
+  <text x="24" y="268" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">分类预算</text>
+  <text x="366" y="268" font-family="sans-serif" font-size="14" font-weight="400" fill="#4A6CF7" text-anchor="end">添加</text>
+  
+  <!-- 分类预算卡片1 - 餐饮 -->
+  <g filter="url(#filter1_d)">
+    <rect x="24" y="280" width="342" height="80" rx="16" fill="white" />
+    <circle cx="60" cy="320" r="20" fill="#F0F4FF" />
+    <path d="M52 320 C52 320, 60 312, 68 320 C68 320, 60 328, 52 320" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="100" y="310" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">餐饮</text>
+    <text x="100" y="335" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">¥1,800 / ¥2,500</text>
+    
+    <!-- 预算进度条 -->
+    <rect x="200" y="320" width="120" height="8" rx="4" fill="#F5F7FA" />
+    <rect x="200" y="320" width="86" height="8" rx="4" fill="#4A6CF7" />
+    <text x="342" y="325" font-family="sans-serif" font-size="14" font-weight="600" fill="#4A6CF7" text-anchor="end">72%</text>
+  </g>
+  
+  <!-- 分类预算卡片2 - 购物 -->
+  <g filter="url(#filter2_d)">
+    <rect x="24" y="380" width="342" height="80" rx="16" fill="white" />
+    <circle cx="60" cy="420" r="20" fill="#F0F4FF" />
+    <rect x="52" y="412" width="16" height="16" rx="4" stroke="#4A6CF7" stroke-width="2" />
+    <text x="100" y="410" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">购物</text>
+    <text x="100" y="435" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">¥1,500 / ¥2,000</text>
+    
+    <!-- 预算进度条 -->
+    <rect x="200" y="420" width="120" height="8" rx="4" fill="#F5F7FA" />
+    <rect x="200" y="420" width="90" height="8" rx="4" fill="#4A6CF7" />
+    <text x="342" y="425" font-family="sans-serif" font-size="14" font-weight="600" fill="#4A6CF7" text-anchor="end">75%</text>
+  </g>
+  
+  <!-- 分类预算卡片3 - 交通 -->
+  <g filter="url(#filter3_d)">
+    <rect x="24" y="480" width="342" height="80" rx="16" fill="white" />
+    <circle cx="60" cy="520" r="20" fill="#F0F4FF" />
+    <path d="M52 520 L68 520 M60 512 L60 528" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+    <text x="100" y="510" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">交通</text>
+    <text x="100" y="535" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">¥800 / ¥1,000</text>
+    
+    <!-- 预算进度条 -->
+    <rect x="200" y="520" width="120" height="8" rx="4" fill="#F5F7FA" />
+    <rect x="200" y="520" width="96" height="8" rx="4" fill="#FF6B6B" />
+    <text x="342" y="525" font-family="sans-serif" font-size="14" font-weight="600" fill="#FF6B6B" text-anchor="end">80%</text>
+  </g>
+  
+  <!-- 分类预算卡片4 - 娱乐 -->
+  <g filter="url(#filter4_d)">
+    <rect x="24" y="580" width="342" height="80" rx="16" fill="white" />
+    <circle cx="60" cy="620" r="20" fill="#F0F4FF" />
+    <path d="M52 616 L68 616 M52 624 L68 624" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+    <text x="100" y="610" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">娱乐</text>
+    <text x="100" y="635" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">¥1,200 / ¥1,500</text>
+    
+    <!-- 预算进度条 -->
+    <rect x="200" y="620" width="120" height="8" rx="4" fill="#F5F7FA" />
+    <rect x="200" y="620" width="96" height="8" rx="4" fill="#FF6B6B" />
+    <text x="342" y="625" font-family="sans-serif" font-size="14" font-weight="600" fill="#FF6B6B" text-anchor="end">80%</text>
+  </g>
+  
+  <!-- 分类预算卡片5 - 其他 -->
+  <g filter="url(#filter5_d)">
+    <rect x="24" y="680" width="342" height="80" rx="16" fill="white" />
+    <circle cx="60" cy="720" r="20" fill="#F0F4FF" />
+    <path d="M52 720 L68 720" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+    <text x="100" y="710" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">其他</text>
+    <text x="100" y="735" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">¥700 / ¥3,000</text>
+    
+    <!-- 预算进度条 -->
+    <rect x="200" y="720" width="120" height="8" rx="4" fill="#F5F7FA" />
+    <rect x="200" y="720" width="28" height="8" rx="4" fill="#2ED573" />
+    <text x="342" y="725" font-family="sans-serif" font-size="14" font-weight="600" fill="#2ED573" text-anchor="end">23%</text>
+  </g>
+  
+  <!-- 底部导航栏 -->
+  <rect y="784" width="390" height="60" fill="white" />
+  <line x1="0" y1="784" x2="390" y2="784" stroke="#EBEEF5" stroke-width="1" />
+  
+  <!-- 首页图标 -->
+  <circle cx="60" cy="814" r="20" fill="#F5F7FA" />
+  <path d="M50 814 L70 814 M60 804 L60 824" stroke="#666666" stroke-width="2" stroke-linecap="round" />
+  <text x="60" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">首页</text>
+  
+  <!-- 记账图标 -->
+  <circle cx="150" cy="814" r="20" fill="#F5F7FA" />
+  <path d="M144 814 L156 814 M150 808 L150 820" stroke="#666666" stroke-width="2" stroke-linecap="round" />
+  <text x="150" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">记账</text>
+  
+  <!-- 报表图标 -->
+  <rect x="230" y="804" width="20" height="20" rx="4" fill="#F5F7FA" />
+  <path d="M234 814 L238 810 L242 814 L246 808" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="240" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">报表</text>
+  
+  <!-- 我的图标 -->
+  <circle cx="330" cy="814" r="10" stroke="#666666" stroke-width="2" />
+  <circle cx="330" cy="810" r="3" fill="#666666" />
+  <path d="M322 822 C322 822, 330 818, 338 822" stroke="#666666" stroke-width="2" stroke-linecap="round" />
+  <text x="330" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">我的</text>
+  
+  <!-- 滤镜定义 -->
+  <defs>
+    <filter id="filter0_d" x="20" y="118" width="350" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter1_d" x="20" y="278" width="350" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter2_d" x="20" y="378" width="350" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter3_d" x="20" y="478" width="350" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter4_d" x="20" y="578" width="350" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter5_d" x="20" y="678" width="350" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="24" y1="120" x2="366" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A6CF7" />
+      <stop offset="1" stop-color="#6E8CFF" />
+    </linearGradient>
+  </defs>
+</svg>

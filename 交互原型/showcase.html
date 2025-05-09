@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智慧账本 - UI设计展示</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f8fafc;
+      color: #333;
+      padding: 0;
+      min-height: 100vh;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #4A6CF7 0%, #6E8CFF 100%);
+      color: white;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    
+    .header p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    .section-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #333;
+      text-align: center;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #4A6CF7 0%, #6E8CFF 100%);
+      border-radius: 2px;
+    }
+    
+    .designs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+    
+    .design-card {
+      background-color: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .design-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+    
+    .design-image {
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      position: relative;
+      background-color: #f5f7fa;
+    }
+    
+    .design-image img, .design-image object {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    .design-info {
+      padding: 24px;
+    }
+    
+    .design-info h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #333;
+    }
+    
+    .design-info p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .design-tag {
+      display: inline-block;
+      padding: 6px 12px;
+      background-color: #f0f4ff;
+      color: #4A6CF7;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 16px;
+      margin-right: 8px;
+    }
+    
+    .section {
+      margin-bottom: 80px;
+    }
+    
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    .footer p {
+      font-size: 16px;
+      opacity: 0.8;
+    }
+    
+    .footer .copyright {
+      margin-top: 20px;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #4A6CF7 0%, #6E8CFF 100%);
+      color: white;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(74, 108, 247, 0.3);
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(74, 108, 247, 0.4);
+    }
+    
+    .design-flow {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px 0;
+      margin-top: 40px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: #4A6CF7 #f0f4ff;
+    }
+    
+    .design-flow::-webkit-scrollbar {
+      height: 8px;
+    }
+    
+    .design-flow::-webkit-scrollbar-track {
+      background: #f0f4ff;
+      border-radius: 4px;
+    }
+    
+    .design-flow::-webkit-scrollbar-thumb {
+      background-color: #4A6CF7;
+      border-radius: 4px;
+    }
+    
+    .flow-item {
+      flex: 0 0 auto;
+      width: 200px;
+      text-align: center;
+    }
+    
+    .flow-image {
+      width: 100%;
+      height: 350px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      margin-bottom: 12px;
+      background-color: #f5f7fa;
+    }
+    
+    .flow-image img, .flow-image object {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    .flow-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 6px;
+    }
+    
+    .flow-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #4A6CF7;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+      .designs-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .header h1 {
+        font-size: 32px;
+      }
+      
+      .header p {
+        font-size: 16px;
+      }
+      
+      .section-title {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>智慧账本 UI设计展示</h1>
+    <p>2025年热门APP设计理念 · 新拟物风格 · 智能财务管理</p>
+  </div>
+  
+  <div class="container">
+    <div class="section">
+      <h2 class="section-title">用户认证流程</h2>
+      <div class="designs-grid">
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../用户认证流程/onboarding-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>启动页</h3>
+            <p>简洁现代的启动页设计，展示品牌标识和核心价值主张，为用户提供良好的第一印象。</p>
+            <span class="design-tag">启动体验</span>
+            <span class="design-tag">品牌展示</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../用户认证流程/login-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>登录页面</h3>
+            <p>直观易用的登录界面，支持手机号登录，提供记住密码和忘记密码功能，以及第三方登录选项。</p>
+            <span class="design-tag">用户认证</span>
+            <span class="design-tag">安全登录</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../用户认证流程/register-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>注册页面</h3>
+            <p>简化的注册流程，收集必要的用户信息，包括手机号验证和密码设置，确保账户安全。</p>
+            <span class="design-tag">用户注册</span>
+            <span class="design-tag">账户创建</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../用户认证流程/forgot-password-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>忘记密码页面</h3>
+            <p>安全的密码重置流程，通过手机验证码验证用户身份，引导用户设置新密码。</p>
+            <span class="design-tag">密码重置</span>
+            <span class="design-tag">账户恢复</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">核心功能界面</h2>
+      <div class="designs-grid">
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../核心功能界面/dashboard-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>首页/仪表盘</h3>
+            <p>信息丰富的仪表盘，展示财务健康评分、本月收支统计、AI洞察和最近交易记录，一目了然。</p>
+            <span class="design-tag">数据可视化</span>
+            <span class="design-tag">财务概览</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../核心功能界面/accounting-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>记账界面</h3>
+            <p>智能记账界面，支持收入/支出切换，提供常用分类快捷选择，以及多模态输入选项。</p>
+            <span class="design-tag">智能记账</span>
+            <span class="design-tag">便捷输入</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../核心功能界面/statistics-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>统计分析界面</h3>
+            <p>多维度的财务分析，包括收支概览、支出分类分析和收支趋势图表，帮助用户了解消费习惯。</p>
+            <span class="design-tag">数据分析</span>
+            <span class="design-tag">图表展示</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../核心功能界面/ai-assistant-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>AI财务助手</h3>
+            <p>智能AI助手提供个性化财务建议，包括财务健康评估和智能消费建议，提升用户财务管理能力。</p>
+            <span class="design-tag">AI智能</span>
+            <span class="design-tag">财务顾问</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../核心功能界面/budget-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>预算管理</h3>
+            <p>灵活的预算设置和监控工具，包括月度预算概览和分类预算管理，帮助用户控制支出。</p>
+            <span class="design-tag">预算控制</span>
+            <span class="design-tag">目标管理</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../核心功能界面/family-collaboration-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>家庭协作</h3>
+            <p>多人协作的家庭财务管理，展示家庭成员贡献和共享账单，促进家庭财务透明度。</p>
+            <span class="design-tag">家庭共享</span>
+            <span class="design-tag">协作管理</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 新增的核心功能界面 -->
+      <div class="design-card">
+        <div class="design-image">
+          <object data="../核心功能界面/receipt-scanning-page.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="design-info">
+          <h3>票据扫描识别界面</h3>
+          <p>智能票据扫描功能，自动识别商家、金额、日期等关键信息，一键保存为记账记录，大幅提升记账效率。</p>
+          <span class="design-tag">OCR识别</span>
+          <span class="design-tag">智能记账</span>
+        </div>
+      </div>
+      
+      <div class="design-card">
+        <div class="design-image">
+          <object data="../核心功能界面/quick-template-page.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="design-info">
+          <h3>快速记账模板界面</h3>
+          <p>个性化记账模板系统，包含常用模板和自定义模板，一键记录日常重复消费，节省用户时间。</p>
+          <span class="design-tag">模板系统</span>
+          <span class="design-tag">快捷记账</span>
+        </div>
+      </div>
+      
+      <div class="design-card">
+        <div class="design-image">
+          <object data="../核心功能界面/bill-import-page.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="design-info">
+          <h3>账单导入界面</h3>
+          <p>多渠道账单导入功能，支持微信支付、支付宝、银行卡和Excel文件导入，轻松汇总所有消费记录。</p>
+          <span class="design-tag">数据导入</span>
+          <span class="design-tag">全渠道支持</span>
+        </div>
+      </div>
+      
+      <div class="design-card">
+        <div class="design-image">
+          <object data="../核心功能界面/top-navigation-bar.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="design-info">
+          <h3>顶部导航栏设计</h3>
+          <p>统一的导航栏设计系统，包含基础导航栏、带返回按钮导航栏、带操作按钮导航栏等多种样式，确保界面一致性。</p>
+          <span class="design-tag">导航系统</span>
+          <span class="design-tag">UI组件</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">特色功能界面</h2>
+      <div class="designs-grid">
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../特色功能界面/multimodal-input-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>多模态输入界面</h3>
+            <p>创新的多种记账方式，包括语音输入、扫描票据和手动记账，满足不同场景的记账需求。</p>
+            <span class="design-tag">语音识别</span>
+            <span class="design-tag">OCR识别</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../特色功能界面/account-security-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>账户与安全页面</h3>
+            <p>全面的账户安全设置，包括密码管理、生物识别、支付验证和隐私设置，保障用户数据安全。</p>
+            <span class="design-tag">安全保障</span>
+            <span class="design-tag">隐私保护</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../特色功能界面/profile-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>个人中心</h3>
+            <p>用户个人信息和设置中心，提供账户管理、偏好设置和应用功能入口，提升用户体验。</p>
+            <span class="design-tag">个人设置</span>
+            <span class="design-tag">功能中心</span>
+          </div>
+        </div>
+        
+        <div class="design-card">
+          <div class="design-image">
+            <object data="../特色功能界面/notification-settings-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="design-info">
+            <h3>通知设置页面</h3>
+            <p>全面的通知管理系统，包括预算提醒、账单提醒、AI财务洞察和家庭共享通知等设置，确保用户及时获取重要信息。</p>
+            <span class="design-tag">通知管理</span>
+            <span class="design-tag">个性化提醒</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">用户流程展示</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666;">智慧账本APP的核心用户流程，展示从注册登录到日常使用的完整体验。</p>
+      
+      <div class="design-flow">
+        <div class="flow-item">
+          <div class="flow-image">
+            <object data="../用户认证流程/onboarding-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="flow-title">启动页</div>
+        </div>
+        
+        <div class="flow-arrow">→</div>
+        
+        <div class="flow-item">
+          <div class="flow-image">
+            <object data="../用户认证流程/login-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="flow-title">登录</div>
+        </div>
+        
+        <div class="flow-arrow">→</div>
+        
+        <div class="flow-item">
+          <div class="flow-image">
+            <object data="../核心功能界面/dashboard-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="flow-title">首页</div>
+        </div>
+        
+        <div class="flow-arrow">→</div>
+        
+        <div class="flow-item">
+          <div class="flow-image">
+            <object data="../核心功能界面/accounting-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="flow-title">记账</div>
+        </div>
+        
+        <div class="flow-arrow">→</div>
+        
+        <div class="flow-item">
+          <div class="flow-image">
+            <object data="../核心功能界面/receipt-scanning-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="flow-title">票据扫描</div>
+        </div>
+        
+        <div class="flow-arrow">→</div>
+        
+        <div class="flow-item">
+          <div class="flow-image">
+            <object data="../核心功能界面/quick-template-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="flow-title">快速模板</div>
+        </div>
+        
+        <div class="flow-arrow">→</div>
+        
+        <div class="flow-item">
+          <div class="flow-image">
+            <object data="../特色功能界面/multimodal-input-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="flow-title">多模态输入</div>
+        </div>
+        
+        <div class="flow-arrow">→</div>
+        
+        <div class="flow-item">
+          <div class="flow-image">
+            <object data="../核心功能界面/statistics-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="flow-title">统计分析</div>
+        </div>
+        
+        <div class="flow-arrow">→</div>
+        
+        <div class="flow-item">
+          <div class="flow-image">
+            <object data="../核心功能界面/ai-assistant-page.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="flow-title">AI助手</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section" style="text-align: center;">
+      <h2 class="section-title">设计亮点</h2>
+      <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+          <strong>1. 新拟物设计风格</strong> - 结合扁平化元素和微妙的阴影效果，创造出现代感强烈的视觉体验。
+        </p>
+        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+          <strong>2. 一致的色彩系统</strong> - 以蓝色渐变为主色调，白色为内容背景，创造清新专业的视觉感受。
+        </p>
+        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+          <strong>3. 智能化功能突出</strong> - AI助手、多模态输入等智能特色功能设计突出，体现产品核心竞争力。
+        </p>
+        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+          <strong>4. 用户体验优先</strong> - 简洁直观的界面布局，清晰的视觉层次，确保用户可以轻松上手。
+        </p>
+        <p style="font-size: 18px; line-height: 1.8;">
+          <strong>5. 完整的用户流程</strong> - 从注册登录到日常使用的完整体验设计，确保用户旅程的流畅性。
+        </p>
+      </div>
+      
+      <a href="interactive-prototype.html" class="cta-button">查看交互原型</a>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>智慧账本 - 让财务管理更智能、更简单</p>
+    <p class="copyright">© 2025 智慧账本 版权所有</p>
+  </div>
+</body>
+</html>

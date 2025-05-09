@@ -1,0 +1,173 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="390" height="844" fill="#F5F7FA" />
+  
+  <!-- 顶部状态栏 -->
+  <rect width="390" height="44" fill="white" />
+  <text x="24" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" dominant-baseline="middle">9:41</text>
+  <text x="366" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="end" dominant-baseline="middle">100%</text>
+  
+  <!-- 顶部导航栏 -->
+  <rect y="44" width="390" height="56" fill="white" />
+  <text x="24" y="72" font-family="sans-serif" font-size="20" font-weight="700" fill="#333333" dominant-baseline="middle">我的</text>
+  <circle cx="354" cy="72" r="18" fill="#F5F7FA" />
+  <path d="M348 72 L360 72 M354 66 L354 78" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- 个人信息卡片 -->
+  <g filter="url(#filter0_d)">
+    <rect x="24" y="120" width="342" height="120" rx="16" fill="url(#paint0_linear)" />
+    
+    <!-- 头像 -->
+    <circle cx="84" cy="180" r="40" fill="white" />
+    <circle cx="84" cy="170" r="8" fill="#4A6CF7" />
+    <path d="M64 200 C64 200, 84 190, 104 200" stroke="#4A6CF7" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- 用户信息 -->
+    <text x="150" y="160" font-family="sans-serif" font-size="20" font-weight="700" fill="white">张小明</text>
+    <text x="150" y="185" font-family="sans-serif" font-size="14" font-weight="400" fill="white" opacity="0.9">138****1234</text>
+    <text x="150" y="210" font-family="sans-serif" font-size="14" font-weight="400" fill="white" opacity="0.9">家庭账本管理员</text>
+    
+    <!-- 编辑按钮 -->
+    <circle cx="318" cy="160" r="16" fill="white" fill-opacity="0.2" />
+    <path d="M312 160 L324 160 M318 154 L318 166" stroke="white" stroke-width="2" stroke-linecap="round" />
+  </g>
+  
+  <!-- 功能区标题 -->
+  <text x="24" y="268" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">功能与服务</text>
+  
+  <!-- 功能区卡片 -->
+  <g filter="url(#filter1_d)">
+    <rect x="24" y="280" width="342" height="240" rx="16" fill="white" />
+    
+    <!-- 功能区第一行 -->
+    <rect x="24" y="280" width="342" height="80" rx="16" fill="white" />
+    <line x1="24" y1="360" x2="366" y2="360" stroke="#EBEEF5" stroke-width="1" />
+    
+    <!-- 家庭管理 -->
+    <circle cx="60" cy="320" r="20" fill="#F0F4FF" />
+    <circle cx="60" cy="316" r="3" fill="#4A6CF7" />
+    <path d="M52 328 C52 328, 60 324, 68 328" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+    <text x="100" y="325" font-family="sans-serif" font-size="16" font-weight="500" fill="#333333">家庭管理</text>
+    <path d="M342 320 L350 320 M346 316 L346 324" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- 功能区第二行 -->
+    <rect x="24" y="360" width="342" height="80" rx="0" fill="white" />
+    <line x1="24" y1="440" x2="366" y2="440" stroke="#EBEEF5" stroke-width="1" />
+    
+    <!-- 账户与安全 -->
+    <circle cx="60" cy="400" r="20" fill="#F0F4FF" />
+    <path d="M50 400 L70 400 M60 390 L60 410" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+    <text x="100" y="405" font-family="sans-serif" font-size="16" font-weight="500" fill="#333333">账户与安全</text>
+    <path d="M342 400 L350 400 M346 396 L346 404" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- 功能区第三行 -->
+    <rect x="24" y="440" width="342" height="80" rx="0 0 16 16" fill="white" />
+    
+    <!-- 通知设置 -->
+    <circle cx="60" cy="480" r="20" fill="#F0F4FF" />
+    <path d="M50 480 L70 480" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+    <text x="100" y="485" font-family="sans-serif" font-size="16" font-weight="500" fill="#333333">通知设置</text>
+    <path d="M342 480 L350 480 M346 476 L346 484" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+  
+  <!-- 其他设置标题 -->
+  <text x="24" y="548" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">其他设置</text>
+  
+  <!-- 其他设置卡片 -->
+  <g filter="url(#filter2_d)">
+    <rect x="24" y="560" width="342" height="240" rx="16" fill="white" />
+    
+    <!-- 其他设置第一行 -->
+    <rect x="24" y="560" width="342" height="80" rx="16 16 0 0" fill="white" />
+    <line x1="24" y1="640" x2="366" y2="640" stroke="#EBEEF5" stroke-width="1" />
+    
+    <!-- 隐私设置 -->
+    <circle cx="60" cy="600" r="20" fill="#F0F4FF" />
+    <rect x="52" y="592" width="16" height="16" rx="4" stroke="#4A6CF7" stroke-width="2" />
+    <text x="100" y="605" font-family="sans-serif" font-size="16" font-weight="500" fill="#333333">隐私设置</text>
+    <path d="M342 600 L350 600 M346 596 L346 604" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- 其他设置第二行 -->
+    <rect x="24" y="640" width="342" height="80" rx="0" fill="white" />
+    <line x1="24" y1="720" x2="366" y2="720" stroke="#EBEEF5" stroke-width="1" />
+    
+    <!-- 帮助与反馈 -->
+    <circle cx="60" cy="680" r="20" fill="#F0F4FF" />
+    <path d="M52 680 C52 680, 60 672, 68 680 C68 680, 60 688, 52 680" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="100" y="685" font-family="sans-serif" font-size="16" font-weight="500" fill="#333333">帮助与反馈</text>
+    <path d="M342 680 L350 680 M346 676 L346 684" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- 其他设置第三行 -->
+    <rect x="24" y="720" width="342" height="80" rx="0 0 16 16" fill="white" />
+    
+    <!-- 关于我们 -->
+    <circle cx="60" cy="760" r="20" fill="#F0F4FF" />
+    <path d="M60 752 L60 768 M60 748 L60 748" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+    <text x="100" y="765" font-family="sans-serif" font-size="16" font-weight="500" fill="#333333">关于我们</text>
+    <path d="M342 760 L350 760 M346 756 L346 764" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+  
+  <!-- 底部导航栏 -->
+  <rect y="824" width="390" height="20" fill="#F5F7FA" />
+  
+  <!-- 底部导航栏 -->
+  <rect y="784" width="390" height="60" fill="white" />
+  <line x1="0" y1="784" x2="390" y2="784" stroke="#EBEEF5" stroke-width="1" />
+  
+  <!-- 首页图标 -->
+  <circle cx="60" cy="814" r="20" fill="#F5F7FA" />
+  <path d="M50 814 L70 814 M60 804 L60 824" stroke="#666666" stroke-width="2" stroke-linecap="round" />
+  <text x="60" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">首页</text>
+  
+  <!-- 记账图标 -->
+  <circle cx="150" cy="814" r="20" fill="#F5F7FA" />
+  <path d="M144 814 L156 814 M150 808 L150 820" stroke="#666666" stroke-width="2" stroke-linecap="round" />
+  <text x="150" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">记账</text>
+  
+  <!-- 报表图标 -->
+  <rect x="230" y="804" width="20" height="20" rx="4" fill="#F5F7FA" />
+  <path d="M234 814 L238 810 L242 814 L246 808" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="240" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">报表</text>
+  
+  <!-- 我的图标 (当前选中) -->
+  <circle cx="330" cy="814" r="10" stroke="#4A6CF7" stroke-width="2" />
+  <circle cx="330" cy="810" r="3" fill="#4A6CF7" />
+  <path d="M322 822 C322 822, 330 818, 338 822" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  <text x="330" y="834" font-family="sans-serif" font-size="12" font-weight="500" fill="#4A6CF7" text-anchor="middle">我的</text>
+  <circle cx="330" cy="814" r="4" fill="#4A6CF7" />
+  
+  <!-- 滤镜定义 -->
+  <defs>
+    <filter id="filter0_d" x="20" y="118" width="350" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter1_d" x="20" y="278" width="350" height="248" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter2_d" x="20" y="558" width="350" height="248" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="24" y1="120" x2="366" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A6CF7" />
+      <stop offset="1" stop-color="#6E8CFF" />
+    </linearGradient>
+  </defs>
+</svg>

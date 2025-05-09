@@ -1,0 +1,137 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="390" height="844" fill="#F5F7FA" />
+  
+  <!-- 顶部状态栏 -->
+  <rect width="390" height="44" fill="white" />
+  <text x="24" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" dominant-baseline="middle">9:41</text>
+  <text x="366" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="end" dominant-baseline="middle">100%</text>
+  
+  <!-- 顶部导航栏 -->
+  <rect y="44" width="390" height="56" fill="white" />
+  <circle cx="36" cy="72" r="20" fill="#F5F7FA" />
+  <path d="M42 72 L30 72 M30 72 L36 66 M30 72 L36 78" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="195" y="72" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333" text-anchor="middle" dominant-baseline="middle">智能记账</text>
+  
+  <!-- 标题 -->
+  <text x="24" y="130" font-family="sans-serif" font-size="20" font-weight="700" fill="#333333">选择记账方式</text>
+  <text x="24" y="160" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">智能账本支持多种记账方式，选择最适合您的</text>
+  
+  <!-- 语音输入卡片 -->
+  <g filter="url(#filter0_d)">
+    <rect x="24" y="180" width="342" height="120" rx="16" fill="white" />
+    <circle cx="70" cy="240" r="30" fill="#F0F4FF" />
+    <path d="M70 220 L70 260 M60 230 L80 230 M60 250 L80 250" stroke="#4A6CF7" stroke-width="3" stroke-linecap="round" />
+    <text x="130" y="230" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333">语音输入</text>
+    <text x="130" y="255" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">通过语音快速记录收支</text>
+    <path d="M342 240 L350 240 M346 236 L346 244" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+  
+  <!-- 扫描票据卡片 -->
+  <g filter="url(#filter1_d)">
+    <rect x="24" y="320" width="342" height="120" rx="16" fill="white" />
+    <circle cx="70" cy="380" r="30" fill="#F0F4FF" />
+    <rect x="55" y="365" width="30" height="30" rx="4" stroke="#4A6CF7" stroke-width="3" />
+    <path d="M55 375 L85 375" stroke="#4A6CF7" stroke-width="3" stroke-linecap="round" />
+    <text x="130" y="370" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333">扫描票据</text>
+    <text x="130" y="395" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">自动识别票据信息</text>
+    <path d="M342 380 L350 380 M346 376 L346 384" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+  
+  <!-- 手动记账卡片 -->
+  <g filter="url(#filter2_d)">
+    <rect x="24" y="460" width="342" height="120" rx="16" fill="white" />
+    <circle cx="70" cy="520" r="30" fill="#F0F4FF" />
+    <path d="M60 520 L80 520 M70 510 L70 530" stroke="#4A6CF7" stroke-width="3" stroke-linecap="round" />
+    <text x="130" y="510" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333">手动记账</text>
+    <text x="130" y="535" font-family="sans-serif" font-size="14" font-weight="400" fill="#666666">传统方式记录收支</text>
+    <path d="M342 520 L350 520 M346 516 L346 524" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+  
+  <!-- AI语音助手界面 -->
+  <g filter="url(#filter3_d)">
+    <rect x="24" y="600" width="342" height="160" rx="16" fill="url(#paint0_linear)" />
+    <text x="48" y="628" font-family="sans-serif" font-size="16" font-weight="600" fill="white">AI语音助手</text>
+    
+    <!-- 语音波形 -->
+    <path d="M60 680 L60 700 M80 670 L80 710 M100 660 L100 720 M120 650 L120 730 M140 660 L140 720 M160 670 L160 710 M180 680 L180 700" stroke="white" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- 语音提示 -->
+    <text x="240" y="680" font-family="sans-serif" font-size="14" font-weight="400" fill="white">正在聆听...</text>
+    <text x="240" y="700" font-family="sans-serif" font-size="12" font-weight="400" fill="white" opacity="0.8">说出您的记账内容</text>
+    
+    <!-- 取消按钮 -->
+    <circle cx="318" cy="690" r="20" fill="white" fill-opacity="0.2" />
+    <path d="M312 690 L324 690" stroke="white" stroke-width="2" stroke-linecap="round" />
+  </g>
+  
+  <!-- 底部导航栏 -->
+  <rect y="784" width="390" height="60" fill="white" />
+  <line x1="0" y1="784" x2="390" y2="784" stroke="#EBEEF5" stroke-width="1" />
+  
+  <!-- 首页图标 -->
+  <circle cx="60" cy="814" r="20" fill="#F5F7FA" />
+  <path d="M50 814 L70 814 M60 804 L60 824" stroke="#666666" stroke-width="2" stroke-linecap="round" />
+  <text x="60" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">首页</text>
+  
+  <!-- 记账图标 (当前选中) -->
+  <circle cx="150" cy="814" r="20" fill="#F5F7FA" />
+  <path d="M144 814 L156 814 M150 808 L150 820" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  <text x="150" y="834" font-family="sans-serif" font-size="12" font-weight="500" fill="#4A6CF7" text-anchor="middle">记账</text>
+  <circle cx="150" cy="814" r="4" fill="#4A6CF7" />
+  
+  <!-- 报表图标 -->
+  <rect x="230" y="804" width="20" height="20" rx="4" fill="#F5F7FA" />
+  <path d="M234 814 L238 810 L242 814 L246 808" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="240" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">报表</text>
+  
+  <!-- 我的图标 -->
+  <circle cx="330" cy="814" r="10" stroke="#666666" stroke-width="2" />
+  <circle cx="330" cy="810" r="3" fill="#666666" />
+  <path d="M322 822 C322 822, 330 818, 338 822" stroke="#666666" stroke-width="2" stroke-linecap="round" />
+  <text x="330" y="834" font-family="sans-serif" font-size="12" font-weight="400" fill="#666666" text-anchor="middle">我的</text>
+  
+  <!-- 滤镜定义 -->
+  <defs>
+    <filter id="filter0_d" x="20" y="178" width="350" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter1_d" x="20" y="318" width="350" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter2_d" x="20" y="458" width="350" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter3_d" x="20" y="598" width="350" height="168" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="24" y1="600" x2="366" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A6CF7" />
+      <stop offset="1" stop-color="#6E8CFF" />
+    </linearGradient>
+  </defs>
+</svg>

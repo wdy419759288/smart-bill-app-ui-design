@@ -1,0 +1,145 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="390" height="844" fill="#F5F7FA" />
+  
+  <!-- 顶部状态栏 -->
+  <rect width="390" height="44" fill="white" />
+  <text x="24" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" dominant-baseline="middle">9:41</text>
+  <text x="366" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="end" dominant-baseline="middle">100%</text>
+  
+  <!-- 标题 -->
+  <text x="24" y="80" font-family="sans-serif" font-size="24" font-weight="700" fill="#333333">顶部导航栏设计</text>
+  <text x="24" y="110" font-family="sans-serif" font-size="16" font-weight="400" fill="#666666">不同场景下的导航栏样式</text>
+  
+  <!-- 基础导航栏 - 标题居中 -->
+  <g filter="url(#filter0_d)">
+    <rect x="24" y="140" width="342" height="100" rx="16" fill="white" />
+    <text x="48" y="170" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">基础导航栏 - 标题居中</text>
+    
+    <!-- 导航栏示例 -->
+    <rect x="48" y="180" width="294" height="56" fill="white" />
+    <text x="195" y="208" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333" text-anchor="middle" dominant-baseline="middle">页面标题</text>
+  </g>
+  
+  <!-- 带返回按钮导航栏 -->
+  <g filter="url(#filter1_d)">
+    <rect x="24" y="260" width="342" height="100" rx="16" fill="white" />
+    <text x="48" y="290" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">带返回按钮导航栏</text>
+    
+    <!-- 导航栏示例 -->
+    <rect x="48" y="300" width="294" height="56" fill="white" />
+    <circle cx="72" cy="328" r="16" fill="#F5F7FA" />
+    <path d="M78 328 L66 328 M66 328 L72 322 M66 328 L72 334" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="195" y="328" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333" text-anchor="middle" dominant-baseline="middle">页面标题</text>
+  </g>
+  
+  <!-- 带操作按钮导航栏 -->
+  <g filter="url(#filter2_d)">
+    <rect x="24" y="380" width="342" height="100" rx="16" fill="white" />
+    <text x="48" y="410" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">带操作按钮导航栏</text>
+    
+    <!-- 导航栏示例 -->
+    <rect x="48" y="420" width="294" height="56" fill="white" />
+    <text x="195" y="448" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333" text-anchor="middle" dominant-baseline="middle">页面标题</text>
+    <circle cx="318" cy="448" r="16" fill="#F5F7FA" />
+    <path d="M312 448 L324 448 M318 442 L318 454" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  </g>
+  
+  <!-- 带搜索导航栏 -->
+  <g filter="url(#filter3_d)">
+    <rect x="24" y="500" width="342" height="100" rx="16" fill="white" />
+    <text x="48" y="530" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">带搜索导航栏</text>
+    
+    <!-- 导航栏示例 -->
+    <rect x="48" y="540" width="294" height="56" fill="white" />
+    <text x="72" y="568" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333" dominant-baseline="middle">首页</text>
+    <rect x="130" y="548" width="180" height="40" rx="20" fill="#F5F7FA" />
+    <circle cx="150" cy="568" r="8" stroke="#666666" stroke-width="1.5" fill="none" />
+    <path d="M156 574 L160 578" stroke="#666666" stroke-width="1.5" stroke-linecap="round" />
+    <text x="170" y="568" font-family="sans-serif" font-size="14" font-weight="400" fill="#999999" dominant-baseline="middle">搜索</text>
+  </g>
+  
+  <!-- 带通知图标导航栏 -->
+  <g filter="url(#filter4_d)">
+    <rect x="24" y="620" width="342" height="100" rx="16" fill="white" />
+    <text x="48" y="650" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">带通知图标导航栏</text>
+    
+    <!-- 导航栏示例 -->
+    <rect x="48" y="660" width="294" height="56" fill="white" />
+    <text x="72" y="688" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333" dominant-baseline="middle">首页</text>
+    <circle cx="318" cy="688" r="16" fill="#F5F7FA" />
+    <circle cx="318" cy="688" r="8" stroke="#666666" stroke-width="1.5" fill="none" />
+    <circle cx="324" cy="682" r="4" fill="#FF6B6B" />
+  </g>
+  
+  <!-- 带分段控制导航栏 -->
+  <g filter="url(#filter5_d)">
+    <rect x="24" y="740" width="342" height="100" rx="16" fill="white" />
+    <text x="48" y="770" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">带分段控制导航栏</text>
+    
+    <!-- 导航栏示例 -->
+    <rect x="48" y="780" width="294" height="56" fill="white" />
+    <rect x="72" y="788" width="246" height="40" rx="20" fill="#F5F7FA" />
+    <rect x="72" y="788" width="123" height="40" rx="20" fill="#4A6CF7" />
+    <text x="133.5" y="808" font-family="sans-serif" font-size="14" font-weight="500" fill="white" text-anchor="middle" dominant-baseline="middle">收入</text>
+    <text x="256.5" y="808" font-family="sans-serif" font-size="14" font-weight="500" fill="#666666" text-anchor="middle" dominant-baseline="middle">支出</text>
+  </g>
+  
+  <!-- 滤镜定义 -->
+  <defs>
+    <filter id="filter0_d" x="20" y="138" width="350" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter1_d" x="20" y="258" width="350" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter2_d" x="20" y="378" width="350" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter3_d" x="20" y="498" width="350" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter4_d" x="20" y="618" width="350" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter5_d" x="20" y="738" width="350" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+</svg>

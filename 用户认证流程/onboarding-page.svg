@@ -1,0 +1,54 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <rect width="390" height="844" fill="url(#paint0_linear)" />
+  
+  <!-- Logo -->
+  <g filter="url(#filter0_d)">
+    <circle cx="195" cy="300" r="80" fill="white" />
+    <path d="M165 300 L225 300 M195 270 L195 330" stroke="#4A6CF7" stroke-width="8" stroke-linecap="round" />
+    <path d="M165 280 C165 280, 195 250, 225 280" stroke="#FF9F43" stroke-width="6" stroke-linecap="round" />
+  </g>
+  
+  <!-- 标题 -->
+  <text x="195" y="420" font-family="sans-serif" font-size="28" font-weight="800" fill="white" text-anchor="middle">智慧账本</text>
+  <text x="195" y="460" font-family="sans-serif" font-size="16" font-weight="400" fill="white" text-anchor="middle" opacity="0.8">智能记账 · 科学理财 · 家庭共享</text>
+  
+  <!-- 底部装饰 -->
+  <path d="M0 700 C100 650, 300 750, 390 700" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+  <path d="M0 720 C150 680, 250 780, 390 720" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+  
+  <!-- 开始按钮 -->
+  <g filter="url(#filter1_d)">
+    <rect x="70" y="520" width="250" height="56" rx="28" fill="white" />
+    <text x="195" y="556" font-family="sans-serif" font-size="18" font-weight="600" fill="#4A6CF7" text-anchor="middle">开始体验</text>
+  </g>
+  
+  <!-- 版本信息 -->
+  <text x="195" y="800" font-family="sans-serif" font-size="12" font-weight="400" fill="white" text-anchor="middle" opacity="0.6">v1.0.0</text>
+  
+  <!-- 滤镜定义 -->
+  <defs>
+    <filter id="filter0_d" x="105" y="210" width="180" height="180" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter1_d" x="65" y="518" width="260" height="66" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="3"/>
+      <feGaussianBlur stdDeviation="2.5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="390" y2="844" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A6CF7" />
+      <stop offset="1" stop-color="#6E8CFF" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智慧账本 - 交互原型</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    
+    .prototype-container {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #4A6CF7;
+    }
+    
+    .description {
+      font-size: 16px;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    
+    .preview-container {
+      position: relative;
+      width: 390px;
+      height: 844px;
+      overflow: hidden;
+      border-radius: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      background-color: white;
+    }
+    
+    .page {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    
+    .page.active {
+      display: block;
+    }
+    
+    .page img, .page svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    .hotspot {
+      position: absolute;
+      background-color: rgba(74, 108, 247, 0.2);
+      border: 2px solid rgba(74, 108, 247, 0.5);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .hotspot:hover {
+      background-color: rgba(74, 108, 247, 0.3);
+    }
+    
+    .hotspot.hidden {
+      background-color: transparent;
+      border-color: transparent;
+    }
+    
+    .navigation {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .nav-button {
+      padding: 8px 16px;
+      background-color: #4A6CF7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-button:hover {
+      background-color: #3a5bd9;
+    }
+    
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      width: 90%;
+    }
+    
+    .modal-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #4A6CF7;
+    }
+    
+    .modal-description {
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    
+    .modal-button {
+      padding: 8px 16px;
+      background-color: #4A6CF7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+    
+    .modal-button:hover {
+      background-color: #3a5bd9;
+    }
+  </style>
+</head>
+<body>
+  <div class="prototype-container">
+    <h1 class="title">智慧账本 - 交互原型</h1>
+    <p class="description">这是智慧账本APP的交互原型，您可以点击屏幕上的热区（蓝色半透明区域）来模拟APP的交互流程。</p>
+    
+    <div class="navigation">
+      <button class="nav-button" id="toggle-hotspots">显示/隐藏热区</button>
+      <button class="nav-button" id="reset-prototype">重置原型</button>
+    </div>
+    
+    <div class="preview-container" id="preview-container">
+      <!-- 启动页 -->
+      <div class="page active" id="onboarding-page">
+        <object data="../用户认证流程/onboarding-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 登录页面 -->
+      <div class="page" id="login-page">
+        <object data="../用户认证流程/login-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 注册页面 -->
+      <div class="page" id="register-page">
+        <object data="../用户认证流程/register-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 忘记密码页面 -->
+      <div class="page" id="forgot-password-page">
+        <object data="../用户认证流程/forgot-password-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 首页/仪表盘 -->
+      <div class="page" id="dashboard-page">
+        <object data="../核心功能界面/dashboard-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 记账界面 -->
+      <div class="page" id="accounting-page">
+        <object data="../核心功能界面/accounting-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 统计分析界面 -->
+      <div class="page" id="statistics-page">
+        <object data="../核心功能界面/statistics-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- AI财务助手 -->
+      <div class="page" id="ai-assistant-page">
+        <object data="../核心功能界面/ai-assistant-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 预算管理 -->
+      <div class="page" id="budget-page">
+        <object data="../核心功能界面/budget-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 家庭协作 -->
+      <div class="page" id="family-collaboration-page">
+        <object data="../核心功能界面/family-collaboration-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 个人中心 -->
+      <div class="page" id="profile-page">
+        <object data="../特色功能界面/profile-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 多模态输入界面 -->
+      <div class="page" id="multimodal-input-page">
+        <object data="../特色功能界面/multimodal-input-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 账户与安全页面 -->
+      <div class="page" id="account-security-page">
+        <object data="../特色功能界面/account-security-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 票据扫描识别界面 -->
+      <div class="page" id="receipt-scanning-page">
+        <object data="../核心功能界面/receipt-scanning-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 快速记账模板界面 -->
+      <div class="page" id="quick-template-page">
+        <object data="../核心功能界面/quick-template-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 账单导入界面 -->
+      <div class="page" id="bill-import-page">
+        <object data="../核心功能界面/bill-import-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 通知设置页面 -->
+      <div class="page" id="notification-settings-page">
+        <object data="../特色功能界面/notification-settings-page.svg" type="image/svg+xml"></object>
+      </div>
+      
+      <!-- 顶部导航栏设计 -->
+      <div class="page" id="top-navigation-bar">
+        <object data="../核心功能界面/top-navigation-bar.svg" type="image/svg+xml"></object>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 模态框 -->
+  <div class="modal" id="info-modal">
+    <div class="modal-content">
+      <h2 class="modal-title" id="modal-title">信息</h2>
+      <p class="modal-description" id="modal-description">这是一个信息提示。</p>
+      <button class="modal-button" id="modal-close">关闭</button>
+    </div>
+  </div>
+  
+  <script>
+    // 页面流程定义
+    const pageFlows = {
+      'onboarding-page': [
+        { x: 24, y: 600, width: 342, height: 56, target: 'login-page', type: 'page' }
+      ],
+      'login-page': [
+        { x: 48, y: 480, width: 294, height: 56, target: 'dashboard-page', type: 'page' },
+        { x: 48, y: 550, width: 294, height: 20, target: 'register-page', type: 'page' },
+        { x: 48, y: 420, width: 294, height: 20, target: 'forgot-password-page', type: 'page' }
+      ],
+      'register-page': [
+        { x: 48, y: 560, width: 294, height: 56, target: 'login-page', type: 'page' },
+        { x: 36, y: 56, width: 40, height: 40, target: 'login-page', type: 'page' }
+      ],
+      'forgot-password-page': [
+        { x: 48, y: 600, width: 294, height: 56, target: 'login-page', type: 'page' },
+        { x: 36, y: 56, width: 40, height: 40, target: 'login-page', type: 'page' },
+        { x: 150, y: 730, width: 90, height: 20, target: 'login-page', type: 'page' }
+      ],
+      'dashboard-page': [
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' },
+        { x: 24, y: 400, width: 342, height: 80, target: 'ai-assistant-page', type: 'page' },
+        { x: 24, y: 320, width: 342, height: 60, target: 'budget-page', type: 'page' }
+      ],
+      'accounting-page': [
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' },
+        { x: 48, y: 600, width: 140, height: 56, target: 'multimodal-input-page', type: 'page' },
+        { x: 202, y: 600, width: 140, height: 56, target: 'receipt-scanning-page', type: 'page' },
+        { x: 48, y: 670, width: 140, height: 56, target: 'quick-template-page', type: 'page' },
+        { x: 202, y: 670, width: 140, height: 56, target: 'bill-import-page', type: 'page' }
+      ],
+      'statistics-page': [
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' }
+      ],
+      'ai-assistant-page': [
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' },
+        { x: 36, y: 72, width: 40, height: 40, target: 'dashboard-page', type: 'page' }
+      ],
+      'budget-page': [
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' },
+        { x: 36, y: 72, width: 40, height: 40, target: 'dashboard-page', type: 'page' }
+      ],
+      'family-collaboration-page': [
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' },
+        { x: 36, y: 72, width: 40, height: 40, target: 'profile-page', type: 'page' }
+      ],
+      'profile-page': [
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' },
+        { x: 24, y: 260, width: 342, height: 60, target: 'family-collaboration-page', type: 'page' },
+        { x: 24, y: 380, width: 342, height: 60, target: 'account-security-page', type: 'page' },
+        { x: 24, y: 280, width: 342, height: 60, target: 'notification-settings-page', type: 'page' }
+      ],
+      'multimodal-input-page': [
+        { x: 36, y: 56, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' },
+        { x: 24, y: 180, width: 342, height: 120, target: 'showModal', type: 'modal', title: '语音输入', description: '您可以通过语音快速记录收支，AI将自动识别金额、类别和备注信息。' },
+        { x: 24, y: 320, width: 342, height: 120, target: 'showModal', type: 'modal', title: '扫描票据', description: '拍摄或上传票据照片，AI将自动识别票据信息并生成记账数据。' },
+        { x: 24, y: 460, width: 342, height: 120, target: 'showModal', type: 'modal', title: '手动记账', description: '传统方式手动输入收支信息，适合需要精确控制的场景。' }
+      ],
+      'account-security-page': [
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' },
+        { x: 36, y: 72, width: 40, height: 40, target: 'profile-page', type: 'page' },
+        { x: 24, y: 300, width: 342, height: 60, target: 'forgot-password-page', type: 'page' },
+        { x: 24, y: 360, width: 342, height: 60, target: 'showModal', type: 'modal', title: '指纹/面容解锁', description: '启用生物识别功能，使用指纹或面容快速解锁应用，提高安全性和便捷性。' },
+        { x: 24, y: 420, width: 342, height: 60, target: 'showModal', type: 'modal', title: '支付验证', description: '设置支付密码和验证方式，保护您的资金安全。' },
+        { x: 24, y: 480, width: 342, height: 60, target: 'showModal', type: 'modal', title: '隐私设置', description: '管理应用的权限和数据访问，保护您的个人隐私。' },
+        { x: 24, y: 560, width: 342, height: 60, target: 'showModal', type: 'modal', title: '用户协议', description: '查看智慧账本的用户协议，了解您的权利和义务。' },
+        { x: 24, y: 620, width: 342, height: 60, target: 'showModal', type: 'modal', title: '隐私政策', description: '查看智慧账本的隐私政策，了解我们如何保护您的数据。' },
+        { x: 24, y: 660, width: 342, height: 56, target: 'showModal', type: 'modal', title: '注销账号', description: '注销账号将删除您的所有数据，此操作不可逆，请谨慎操作。' }
+      ],
+      'receipt-scanning-page': [
+        { x: 36, y: 56, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 48, y: 700, width: 140, height: 56, target: 'accounting-page', type: 'page' },
+        { x: 202, y: 700, width: 140, height: 56, target: 'accounting-page', type: 'page' }
+      ],
+      'quick-template-page': [
+        { x: 36, y: 56, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' }
+      ],
+      'bill-import-page': [
+        { x: 36, y: 56, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 48, y: 700, width: 294, height: 56, target: 'accounting-page', type: 'page' },
+        { x: 60, y: 814, width: 40, height: 40, target: 'dashboard-page', type: 'page' },
+        { x: 150, y: 814, width: 40, height: 40, target: 'accounting-page', type: 'page' },
+        { x: 240, y: 814, width: 40, height: 40, target: 'statistics-page', type: 'page' },
+        { x: 330, y: 814, width: 40, height: 40, target: 'profile-page', type: 'page' }
+      ],
+      'notification-settings-page': [
+        { x: 36, y: 56, width: 40, height: 40, target: 'profile-page', type: 'page' }
+      ],
+      'top-navigation-bar': [
+        { x: 36, y: 56, width: 40, height: 40, target: 'dashboard-page', type: 'page' }
+      ]
+    };
+    
+    // 初始化热区
+    function initHotspots() {
+      const previewContainer = document.getElementById('preview-container');
+      const pages = document.querySelectorAll('.page');
+      
+      // 清除现有热区
+      const existingHotspots = document.querySelectorAll('.hotspot');
+      existingHotspots.forEach(hotspot => hotspot.remove());
+      
+      // 为当前活动页面创建热区
+      const activePage = document.querySelector('.page.active');
+      const pageId = activePage.id;
+      
+      if (pageFlows[pageId]) {
+        pageFlows[pageId].forEach((hotspot, index) => {
+          const hotspotElement = document.createElement('div');
+          hotspotElement.classList.add('hotspot');
+          hotspotElement.style.left = `${hotspot.x}px`;
+          hotspotElement.style.top = `${hotspot.y}px`;
+          hotspotElement.style.width = `${hotspot.width}px`;
+          hotspotElement.style.height = `${hotspot.height}px`;
+          
+          hotspotElement.addEventListener('click', () => {
+            if (hotspot.type === 'page') {
+              navigateToPage(hotspot.target);
+            } else if (hotspot.type === 'modal') {
+              showModal(hotspot.title, hotspot.description);
+            }
+          });
+          
+          previewContainer.appendChild(hotspotElement);
+        });
+      }
+    }
+    
+    // 导航到指定页面
+    function navigateToPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active'));
+      
+      const targetPage = document.getElementById(pageId);
+      if (targetPage) {
+        targetPage.classList.add('active');
+        initHotspots();
+      }
+    }
+    
+    // 显示模态框
+    function showModal(title, description) {
+      const modal = document.getElementById('info-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDescription = document.getElementById('modal-description');
+      
+      modalTitle.textContent = title;
+      modalDescription.textContent = description;
+      
+      modal.classList.add('active');
+    }
+    
+    // 隐藏模态框
+    function hideModal() {
+      const modal = document.getElementById('info-modal');
+      modal.classList.remove('active');
+    }
+    
+    // 切换热区显示/隐藏
+    function toggleHotspots() {
+      const hotspots = document.querySelectorAll('.hotspot');
+      hotspots.forEach(hotspot => hotspot.classList.toggle('hidden'));
+    }
+    
+    // 重置原型
+    function resetPrototype() {
+      navigateToPage('onboarding-page');
+    }
+    
+    // 初始化事件监听
+    document.addEventListener('DOMContentLoaded', () => {
+      // 初始化热区
+      initHotspots();
+      
+      // 模态框关闭按钮
+      const modalCloseButton = document.getElementById('modal-close');
+      modalCloseButton.addEventListener('click', hideModal);
+      
+      // 切换热区显示/隐藏按钮
+      const toggleHotspotsButton = document.getElementById('toggle-hotspots');
+      toggleHotspotsButton.addEventListener('click', toggleHotspots);
+      
+      // 重置原型按钮
+      const resetPrototypeButton = document.getElementById('reset-prototype');
+      resetPrototypeButton.addEventListener('click', resetPrototype);
+    });
+  </script>
+</body>
+</html>

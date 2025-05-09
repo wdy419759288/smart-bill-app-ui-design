@@ -1,0 +1,116 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="390" height="844" fill="#F5F7FA" />
+  
+  <!-- 顶部状态栏 -->
+  <rect width="390" height="44" fill="white" />
+  <text x="24" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" dominant-baseline="middle">9:41</text>
+  <text x="366" y="24" font-family="sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="end" dominant-baseline="middle">100%</text>
+  
+  <!-- 顶部导航栏 -->
+  <rect y="44" width="390" height="56" fill="white" />
+  <text x="24" y="72" font-family="sans-serif" font-size="20" font-weight="700" fill="#333333" dominant-baseline="middle">记账</text>
+  <circle cx="354" cy="72" r="18" fill="#F5F7FA" />
+  <path d="M348 72 L360 72 M354 66 L354 78" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- 记账类型切换 -->
+  <rect x="24" y="120" width="342" height="48" rx="24" fill="white" />
+  <rect x="24" y="120" width="171" height="48" rx="24" fill="#4A6CF7" />
+  <text x="109.5" y="148" font-family="sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">支出</text>
+  <text x="280.5" y="148" font-family="sans-serif" font-size="16" font-weight="600" fill="#666666" text-anchor="middle">收入</text>
+  
+  <!-- 金额输入区域 -->
+  <rect x="24" y="188" width="342" height="120" rx="16" fill="white" />
+  <text x="48" y="220" font-family="sans-serif" font-size="16" font-weight="400" fill="#666666">金额</text>
+  <text x="48" y="270" font-family="sans-serif" font-size="36" font-weight="700" fill="#333333">¥</text>
+  <text x="78" y="270" font-family="sans-serif" font-size="36" font-weight="700" fill="#333333">68.50</text>
+  <line x1="48" y1="288" x2="318" y2="288" stroke="#EBEEF5" stroke-width="1" />
+  
+  <!-- 常用分类快捷选择 -->
+  <text x="24" y="340" font-family="sans-serif" font-size="16" font-weight="600" fill="#333333">分类</text>
+  
+  <!-- 分类图标行1 -->
+  <circle cx="60" cy="380" r="24" fill="#F0F4FF" />
+  <path d="M52 380 C52 380, 60 372, 68 380 C68 380, 60 388, 52 380" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="60" y="420" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">餐饮</text>
+  
+  <circle cx="130" cy="380" r="24" fill="#F0F4FF" />
+  <rect x="122" y="372" width="16" height="16" rx="4" stroke="#4A6CF7" stroke-width="2" />
+  <text x="130" y="420" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">购物</text>
+  
+  <circle cx="200" cy="380" r="24" fill="#F0F4FF" />
+  <path d="M192 380 L208 380 M200 372 L200 388" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  <text x="200" y="420" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">交通</text>
+  
+  <circle cx="270" cy="380" r="24" fill="#F0F4FF" />
+  <path d="M262 376 L278 376 M262 384 L278 384" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  <text x="270" y="420" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">娱乐</text>
+  
+  <circle cx="340" cy="380" r="24" fill="#F0F4FF" />
+  <path d="M332 380 L348 380" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  <text x="340" y="420" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">医疗</text>
+  
+  <!-- 分类图标行2 -->
+  <circle cx="60" cy="460" r="24" fill="#F0F4FF" />
+  <path d="M52 460 L68 460 M60 452 L60 468" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  <text x="60" y="500" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">住房</text>
+  
+  <circle cx="130" cy="460" r="24" fill="#F0F4FF" />
+  <path d="M122 460 L138 460" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  <text x="130" y="500" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">通讯</text>
+  
+  <circle cx="200" cy="460" r="24" fill="#F0F4FF" />
+  <path d="M192 456 L208 456 M192 464 L208 464" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  <text x="200" y="500" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">学习</text>
+  
+  <circle cx="270" cy="460" r="24" fill="#F0F4FF" />
+  <path d="M262 460 C262 460, 270 452, 278 460 C278 460, 270 468, 262 460" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="270" y="500" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">旅行</text>
+  
+  <circle cx="340" cy="460" r="24" fill="#F0F4FF" />
+  <path d="M332 460 L348 460 M340 452 L340 468" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" />
+  <text x="340" y="500" font-family="sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle">更多</text>
+  
+  <!-- 备注输入框 -->
+  <rect x="24" y="540" width="342" height="56" rx="12" fill="white" />
+  <text x="48" y="575" font-family="sans-serif" font-size="16" font-weight="400" fill="#666666">添加备注...</text>
+  
+  <!-- 日期选择 -->
+  <rect x="24" y="616" width="166" height="56" rx="12" fill="white" />
+  <text x="48" y="651" font-family="sans-serif" font-size="16" font-weight="400" fill="#333333">今天</text>
+  <path d="M166 636 L174 644 L166 652" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- 账户选择 -->
+  <rect x="200" y="616" width="166" height="56" rx="12" fill="white" />
+  <text x="224" y="651" font-family="sans-serif" font-size="16" font-weight="400" fill="#333333">现金</text>
+  <path d="M342 636 L350 644 L342 652" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- 多模态输入按钮 -->
+  <rect x="24" y="692" width="166" height="56" rx="12" fill="white" />
+  <circle cx="60" cy="720" r="16" fill="#F0F4FF" />
+  <path d="M54 720 C54 720, 60 714, 66 720 C66 720, 60 726, 54 720" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="100" y="725" font-family="sans-serif" font-size="16" font-weight="400" fill="#333333">语音</text>
+  
+  <!-- 扫描票据按钮 -->
+  <rect x="200" y="692" width="166" height="56" rx="12" fill="white" />
+  <circle cx="236" cy="720" r="16" fill="#F0F4FF" />
+  <rect x="228" y="712" width="16" height="16" rx="2" stroke="#4A6CF7" stroke-width="2" />
+  <text x="276" y="725" font-family="sans-serif" font-size="16" font-weight="400" fill="#333333">扫描</text>
+  
+  <!-- 保存按钮 -->
+  <rect x="24" y="768" width="342" height="56" rx="28" fill="#4A6CF7" />
+  <text x="195" y="804" font-family="sans-serif" font-size="18" font-weight="600" fill="white" text-anchor="middle">保存</text>
+  
+  <!-- 滤镜定义 -->
+  <defs>
+    <filter id="filter0_d" x="20" y="118" width="350" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+</svg>
